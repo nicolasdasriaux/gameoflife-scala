@@ -1,9 +1,9 @@
 package gameoflife
 
-import gameoflife.CellStatus._
+import gameoflife.CellState._
 
 object Rules {
-  def nextCellState(cellStatus: CellStatus, neighbourCount: Int): CellStatus = {
+  def nextCellState(cellStatus: CellState, neighbourCount: Int): CellState = {
     neighbourCount match {
       case n if n < 2 => Dead
       case n if n > 3 => Dead

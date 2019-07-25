@@ -3,7 +3,7 @@ package gameoflife
 import org.scalatest.{FunSpec, Matchers}
 import org.scalatest.prop.TableDrivenPropertyChecks._
 
-import CellStatus._
+import CellState._
 
 class RulesTest extends FunSpec with Matchers {
   describe("Rules") {

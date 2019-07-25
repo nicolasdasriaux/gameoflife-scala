@@ -37,5 +37,13 @@ class GridTest extends FunSpec with Matchers {
         blinkerV.nextGridState.nextGridState should be(blinkerV)
       }
     }
+
+    describe("Display String") {
+      it("should produce duisplay string") {
+        val blinkerV = Grid(Set(Position(1, 0), Position(1, 1), Position(1, 2)))
+        val displayString = Grid.toDisplayString(blinkerV, Area(Position(-1, -1), Position(3, 3)))
+        println(displayString)
+      }
+    }
   }
 }
